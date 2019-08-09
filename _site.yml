@@ -1,0 +1,30 @@
+name: "my-website"
+output_dir: "."
+navbar:
+  title: "STT 3830"
+  left:
+    - text: "Class Notes"
+      href: https://alanarnholt.github.io/STT3830/Notes/Parent.html
+    - text: "Resources"
+      href: https://alanarnholt.github.io/resources.html
+    - text: "For Students"
+      href: https://alanarnholt.github.io/for-students.html
+    - text: "Syllabus"
+      href: ./Syllabus/SyllabusSTT3830F2019.html
+    - text: "Course Pacing"
+      href: ./CoursePacing/CoursePacingF2019.html
+      
+     
+  right:
+    - text: "Alan T. Arnholt"
+      href: https://alanarnholt.github.io 
+    - icon: fa-github fa-lg
+      href: https://github.com/alanarnholt/STT3830/         
+output:
+  html_document:
+    theme: yeti
+    highlight: textmate
+    include:
+      after_body: footer.html
+    css: styles.css  
+      
