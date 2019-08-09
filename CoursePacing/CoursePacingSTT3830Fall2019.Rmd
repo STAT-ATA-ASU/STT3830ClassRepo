@@ -27,8 +27,8 @@ output:
 
 * In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
 
-* [Statistics Review](../Rmarkdown/StatReview.html)
-* Link to [Day One Activity and Code](../Rmarkdown/DayOne.html)
+* [Statistics Review](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/StatReview.html)
+* Link to [Day One Activity and Code](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/DayOne.html)
     
     ```{block2, note-text, type='rmdnote'}
 Most GitHub Classroom assignments due dates are 5 p.m. Friday.
@@ -45,8 +45,8 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
     + [Phillip Guo's Unix-like command line tutorials (Four tutorials about 10 minutes each)](http://www.pgbovine.net/command-line-tutorial.htm)
     + [Phillip Guo's Basic Git and Github tutorials (Three tutorials about 10 minutes each)](http://www.pgbovine.net/git-tutorial.htm)
     + [Clone a GitHub Repo with RStudio (Video)](https://www.youtube.com/watch?v=YxZ8J2rqhEM) (5:05)
-* In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
-* [Statistics Review](../Rmarkdown/StatReview.html)
+* In class lecture: Review of one and two sample inference --- take notes
+* [Statistics Review](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/StatReview.html)
 
 * Homework:
     + Read Chapters 1-2 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
@@ -65,28 +65,20 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 **Aug 28:**
 
 * In class lecture: Review of one and two sample inference, permutation tests, and bootstrap procedures --- take notes
-* [Statistics Review](../Rmarkdown/StatReview.html)
-* [Schistosomiasis](../Rmarkdown/Schistosomiasis.html)
+* [Statistics Review](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/StatReview.html)
 * Use an avatar or picture on your GitHub account
 
 
 
 **Aug 30:**
 
-* Before class:
-    + Read chapter 1 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Opening Remarks and Examples](https://www.youtube.com/watch?v=2wLfFB_6SKI) (18:18)
-    + Watch [Supervised and Unsupervised Learning](https://www.youtube.com/watch?v=LvaTokhYnDw) (12:12)
-    + Read Section 3.4 of [bookdown: Authoring Books and Technical Documents with R Markdown](https://bookdown.org/yihui/bookdown/)
-* Lecture - [Rmarkdown example](../Rmarkdown/FlowControl.html)
-* Bootstrap - [Rmarkdown example](../Rmarkdown/TheBootstrap.html)
-* [Overplotting Examples and possible Solutions](../Rmarkdown/HousingData.html)
+
+* [Overplotting Examples and possible Solutions](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/HousingData.html)
 
 * Due TODAY:
     + Reproduce [Modified Introduction to R (Lab1)](https://stat-ata-asu.github.io/ISLR-CHAP2-LAB-SC/Lab1-Solution.html).  Accept assignment from GitHub Classroom. Due Aug 30 
     
-* Homework:
-    + Reproduce [Writing Assignment (Lab2)](https://stat-ata-asu.github.io/WritingAssignment-SC/WritingAssignment-Solution.html).  Accept assignment from GitHub Classroom.  Due Sep 6
+* Homework:  Complete [Data Camp Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) --- Due Sep 6
 
 
 ~~**Sep 2:**~~ **No Class - State Holiday**
@@ -95,58 +87,44 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 **Sep 4:**
 
-* Before class:
-    + Read chapter 2 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Statistical Learning and Regression](https://www.youtube.com/watch?v=WjyuiK5taS8) (11:41)
-    + Watch [Curse of Dimensionality and Parametric Models](https://www.youtube.com/watch?v=UvxHOkYQl8g) (11:40)
-    + Watch [Assessing Model Accuracy and Bias-Variance Trade-off](https://www.youtube.com/watch?v=VusKAosxxyk) (10:04)
-* Lecture - Bias Variance Tradeoff - Take notes
+* Homework:  Complete [Data Camp Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) --- Due Sep 6
 
 
 **Sep 6:**
 
-* Before class: 
-    + Review/read chapter 2 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Classification Problems and K-Nearest Neighbors](https://www.youtube.com/watch?v=vVj2itVNku4) (15:37)
-* Lecture - Bias Variance Tradeoff - Take notes - [Slides](../Rmarkdown/BiasVarDer.pdf) 
-* Due TODAY:  Reproduce [Writing Assignment (Lab2)](https://stat-ata-asu.github.io/WritingAssignment-SC/WritingAssignment-Solution.html).  Accept assignment from GitHub Classroom.  Due Sep 6
+
+* Due TODAY: [Data Camp Introduction to the Tidyverse](https://www.datacamp.com/courses/introduction-to-the-tidyverse) --- Due Sep 6
 
 
 **Sep 9:**
 
-* Before class: 
-    + Review/read chapter 2 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-* Go over [Bias Variance Graphs](../Rmarkdown/BiasVariance.html) 
-* Go over [Chapter 2 Graphs](../Rmarkdown/Chap2Slides.html)
-* Discuss flexible models and when to use them
 * Homework:
-    + [Data Camp Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) - Due Sep 13
-    + Reproduce [Data Camp Correlation and Regression](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Sep 20
+    + [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r) - Due Sep 13
+    + Reproduce [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r) - Accept assignment from GitHub Classroom - Due Sep 20
 
 
 **Sep 11:**
 
-* Before class:
-    + Review [_bookdown: Authoring Books and Technical Documents with R Markdown_](https://bookdown.org/yihui/bookdown/) as needed
-* Go over [Bias Variance Graphs](../Rmarkdown/BiasVariance.html) 
-* Go over [Chapter 2 Graphs](../Rmarkdown/Chap2Slides.html)
+* Go over [Chapter 2 Graphs](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
 
 **Sep 13:**
 
 * Work Day
-* [Data Camp Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) - Due Sep 13
-* Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Sep 20
+* Due TODAY: [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r)  - Due Sep 13
+* Reproduce [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r)  - Accept assignment from GitHub Classroom - Due Sep 20
 
 **Sep 16:**
 
-* Before class:
-    + Read pages 59-82 of [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Simple Linear Regression and Confidence Intervals](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01)
-    + Watch [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
-    + Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
-* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Sep 20
+* TBD
+
+________________________________
+
+
+**Stop here---8/9/19 3:42pm**
+
+
+_____________________________
 
 **Sep 18:**
 
@@ -155,6 +133,13 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 **Sep 20:**
 
+* * Before class:
+    + Read pages 59-82 of [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
+    + Watch [Simple Linear Regression and Confidence Intervals](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01)
+    + Watch [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
+    + Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html )
+* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Sep 20
 * Workday
 * Due TODAY: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Sep 20
 
