@@ -102,5 +102,5 @@ Note: All technology used in the class is either open source (free) or will be a
 
 **Assignments**
 
-The [CoursePacing guide](../CoursePacing/CoursePacingSTT3840Fall2019.html) has all course assignments and due dates.
+The [CoursePacing guide](../CoursePacing/CoursePacingSTT3830Fall2019.html) has all course assignments and due dates.
 
