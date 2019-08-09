@@ -9,7 +9,7 @@ title: "Welcome"
 
 * [Course Syllabus](./Syllabus/SyllabusSTT3850F2018.html)
 
-* [Assignments and Course Pacing](./CoursePacing/CoursePacingF2018.html)
+* [Assignments and Course Pacing](./CoursePacing/CoursePacingSTT3830Fall2019.html)
 
 
 
