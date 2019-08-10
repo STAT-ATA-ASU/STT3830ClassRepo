@@ -15,7 +15,7 @@ output:
 * Become familiar with the Appstate [RStudio server](https://mathr.math.appstate.edu/). You will use your Appstate user name and password to log in to the server.  You must be registered in the class to access the server.
 * Sign-up for free accounts on [GitHub](https://github.com).
 * When you register for a free individual GitHub account, request a [student discount](https://education.github.com) to obtain a few private repositories as well as unlimited public repositories.  Please use something similar to **first_name_last_name** as your username when you register with GitHub.  For example, my username on GitHub is *alanarnholt*. If you have a popular name such as John Smith, you may need to provide some other distinquishing characteristic in your **username**.  
-* Once you have a GitHub account, send an email to arnholtat@appstate.edu with a Subject line of **STT3851 - GitHub Username**, and tell me in the body of your email your first name, last name, and your GitHub username.
+* Once you have a GitHub account, send an email to arnholtat@appstate.edu with a Subject line of **STT3830 - GitHub Username**, and tell me in the body of your email your first name, last name, and your GitHub username.
 
 * Homework: 
     + Watch this [video (14 minutes)](https://www.youtube.com/watch?v=ZFaWxxzouCY&list=PLjTlxb-wKvXNSDfcKPFH2gzHGyjpeCZmJ&index=3) which provides some background on asking questions.  
@@ -118,181 +118,170 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * TBD
 
-________________________________
-
-
-**Stop here---8/9/19 3:42pm**
-
-
-_____________________________
 
 **Sep 18:**
 
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
-* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Sep 20
+* TBD
+
 
 **Sep 20:**
 
-* * Before class:
-    + Read pages 59-82 of [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Simple Linear Regression and Confidence Intervals](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01)
-    + Watch [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
-    + Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
-* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html )
-* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Sep 20
-* Workday
-* Due TODAY: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Sep 20
+* Due TODAY: Reproduce [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r)  - Accept assignment from GitHub Classroom - Due Sep 20
+
 
 **Sep 23:**
 
 * Before class:
-    + Read pages 82-120 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
-* Go over [Bias Variance Graphs again](../Rmarkdown/BiasVarianceGGplot.html)
+    + Read pages 59-82 of [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
+    + Watch [Simple Linear Regression and Confidence Intervals](https://www.youtube.com/watch?v=PsE9UqoWtS4) (13:01)
+    + Watch [Hypothesis Testing ](https://www.youtube.com/watch?v=J6AdoiNUyWI) (8:24)
+    + Watch [Multiple Linear Regression and Interpreting Regression Coefficients ](https://www.youtube.com/watch?v=1hbCJyM9ccs) (15:38)
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Homework: 
-    +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Sep 27
-    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+    +  Complete [Data Camp Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) - Due Sep 27
+    +  Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 
 **Sep 25:**
 
-* Before class:
-    + Review pages 82-120 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Homework: 
-    +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Sep 27
-    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+    +  Complete [Data Camp Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) - Due Sep 27
+    +  Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+
 
 **Sep 27:**
 
-* Before class:
-    + Review pages 82-120 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
-* Due TODAY: Data Camp Multiple and Logistic Regression - Due Sep 27    
+
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Homework: 
-    + Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 4   
+    +  Due TODAY: Complete [Data Camp Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) - Due Sep 27
+    +  Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 
 **Sep 30:**
 
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
-* Answer questions at the end of [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html).
-* Homework:
-      +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
-      
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
+* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+
+
 **Oct 2:**
 
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
-* Answer questions at the end of [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html).
-* Homework:
-      +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
+* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 **Oct 4:**
 
-* Workday
-* Due TODAY: Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
-* Homework: Reproduce [Lab: Linear Regression (Lab3)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
-
+* Due TODAY: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 **Oct 7:**
 
-* Discuss [Chapter 2 and 3 material](../Rmarkdown/Chap2Slides.html)
+* Before class:
+    + Read pages 82-120 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
+    + Watch [Model Selection and Qualitative Predictors](https://www.youtube.com/watch?v=3T6RXmIHbJ4) (14:51)
+    
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
+
+* Homework: 
+    +  Reproduce [Lab: Linear Regression (Lab3)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
+    +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 
 **Oct 9:**
 
 * Before class:
-    + Read the article [_Modeling Home Prices Using Realtor Data_](https://www.tandfonline.com/doi/full/10.1080/10691898.2008.11889569).
-    + The data set can be downloaded from http://www.amstat.org/publications/jse/datasets/homes76.dat.txt, while the code book is available from http://www.amstat.org/publications/jse/datasets/homes76.txt
-    + Project 1---Accept assignment from GitHub Classroom - Due Oct 25
+    + Review pages 82-120 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
+    + Watch [Interactions and Nonlinearity](https://www.youtube.com/watch?v=IFzVxLv0TKQ) (14:16)
+    + Watch [Lab: Linear Regression](https://www.youtube.com/watch?v=5ONFqIk3RFg) (22:10)
+    
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
+
+* Homework: 
+    +  Reproduce [Lab: Linear Regression (Lab3)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
+    +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 **Oct 11:**
 
-* Workday
-* Due TODAY: Reproduce [Lab: Linear Regression (Lab3)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
+* Before class:  Review pages 82-120 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
+  
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
-~~**Oct 14:**~~ No Class - Fall Break 
+* Homework: 
+    +  Due TODAY: Reproduce [Lab: Linear Regression (Lab3)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
+    +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+
+
+~~**Oct 14**~~  Fall Break
 
 **Oct 16:**
 
-* Work on Project 1---Accept assignment from GitHub Classroom - Due Oct 25
-* [Code for class notes](../Rmarkdown/BodyTemperatures.html)
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
-
+* Homework:
+    +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+    
 **Oct 18:**
 
-* TBD
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
+* Homework:
+    + Due TODAY: [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+    
 **Oct 21:**
 
-* TBD
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
+* Homework:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 **Oct 23:**
 
 * Before class:
-    + Read chapter 5 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Estimating Prediction Error and Validation Set Approach](https://www.youtube.com/watch?v=_2ij6eaaSl0) (14:01)
+    + Read the article [_Modeling Home Prices Using Realtor Data_](https://www.tandfonline.com/doi/full/10.1080/10691898.2008.11889569).
+    + The data set can be downloaded from http://www.amstat.org/publications/jse/datasets/homes76.dat.txt, while the code book is available from http://www.amstat.org/publications/jse/datasets/homes76.txt
+    + Project 1---Accept assignment from GitHub Classroom - Due Nov 8
 
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
+
+* Homework:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+    
 **Oct 25:**
 
-* Workday
-* Due TODAY: [Project 1](../Rmarkdown/DirectionsMHP.html)----ALAN update directions ASAP-----Due Oct 25
+* Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
+
+* Due TODAY:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 **Oct 28:**
 
-* Before class:
-    + Review chapter 5 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [K-fold Cross-Validation](https://www.youtube.com/watch?v=nZAM5OXrktY) (13:33)
-    + Watch [Cross-Validation: The Right and Wrong Ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10:07)
+* TBD
 
 **Oct 30:**
 
-* Before class:
-    + Review chapter 5 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Cross-Validation: The Right and Wrong Ways](https://www.youtube.com/watch?v=S06JpVoNaA0) (10:07)
+* TBD
 
 **Nov 1:**
 
-* Before class:
-    + Review chapter 5 [ISLR](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
-    + Watch [Lab: Cross-Validation](https://www.youtube.com/watch?v=6dSXlqHAoMk) (11:21)
-* Discuss [Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)
-* Homework: [Reproduce _Lab: Cross-Validation_ (Lab4)](https://stat-ata-asu.github.io/ISLR-CHAP5-LAB-SC/Lab4-CV.html) --- Accept assignment from GitHub Classroom - Due Nov 8
+* TBD
 
 
 **Nov 4:**
 
-* Discuss [Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)
-* Homework: [Reproduce _Lab: Cross-Validation_ (Lab4)](https://stat-ata-asu.github.io/ISLR-CHAP5-LAB-SC/Lab4-CV.html) --- Accept assignment from GitHub Classroom - Due Nov 8
+* TBD
 
 **Nov 6:**
 
-* Discuss [Cross-Validation Hand Out](../Rmarkdown/Cross-ValidationInClassHO.html)
-* Homework: [Reproduce _Lab: Cross-Validation_ (Lab4)](https://stat-ata-asu.github.io/ISLR-CHAP5-LAB-SC/Lab4-CV.html) --- Accept assignment from GitHub Classroom - Due Nov 8
+* TBD
 
 **Nov 8:**
 
-* Workday
-* Due TODAY: [Reproduce _Lab: Cross-Validation_ (Lab4)](https://stat-ata-asu.github.io/ISLR-CHAP5-LAB-SC/Lab4-CV.html) --- Accept assignment from GitHub Classroom - Due Nov 8
-* Homework: [Data Camp Machine Learning Toolbox](https://www.datacamp.com/courses/machine-learning-toolbox) - Due Nov 15 
-* Homework: Reproduce [Data Camp Machine Learning Toolbox (DataCamp3)](https://stat-ata-asu.github.io/MachineLearningToolbox/) --- Accept assignment from GitHub Classroom - Due Nov 22 
+* Due TODAY: Project 1---Accept assignment from GitHub Classroom - Due Nov 8
+
 
 **Nov 11:**
-
-* TBD
-
-**Nov 13:**
-
-* TBD
-
-**Nov 15:**
-
-* Due TODAY: [Data Camp Machine Learning Toolbox](https://www.datacamp.com/courses/machine-learning-toolbox) - Due Nov 15 
-
-**Nov 18:**
 
 * Before class:
     + Watch [Linear Model Selection and Best Subset Selection](https://www.youtube.com/watch?v=91si52nk3LA) (13:44)
@@ -305,35 +294,39 @@ Start Project 2
 * Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](../Rmarkdown/KingCounty.html)  
 * Send an email to the instructor using a subject of "House Data Predictions" with an attached vector (csv file) of your predictions using the data set `housedataTEST.csv`.  Note: your vector should contain 4229 predictions. 
 
-**Nov 20:**
+**Nov 13:**
 
-* Before class:
-    + Watch [Estimating Test Error Using Mallow’s Cp, AIC, BIC, Adjusted R-squared](https://www.youtube.com/watch?v=LkifE44myLc) (14:06)
-    + Watch [Estimating Test Error Using Cross-Validation](https://www.youtube.com/watch?v=3p9JNaJCOb4) (8:43)
-* [Notes on Credit Problem](../Rmarkdown/CreditProblemMore.html)
+* TBD
+
+**Nov 15:**
+
+* TBD
+
+**Nov 18:**
+
+* TBD
+
 
 **Nov 22:**
 
-* Workday
-* Due TODAY: Reproduce [Data Camp Machine Learning Toolbox (DataCamp3)](https://stat-ata-asu.github.io/MachineLearningToolbox/) --- Accept assignment from GitHub Classroom - Due Nov 22 
+* TBD
+
 **Nov 25:**
 
-* Before class:
-    + Watch [Shrinkage Methods and Ridge Regression](https://www.youtube.com/watch?v=cSKzqb0EKS0) (12:37)
-    + Watch [The Lasso](https://www.youtube.com/watch?v=A5I1G1MfUmA) (15:21)
-    + Watch [Tuning Parameter Selection for Ridge Regression and Lasso](https://www.youtube.com/watch?v=xMKVUstjXBE) (5:27)
+* TBD
 
 ~~**Nov 27-29:**~~ No Class --- State Holiday
 
 **Dec 2:**
 
 * Send an email to the instructor using a subject of "House Data Predictions" with an attached vector (csv file) of your predictions using the data set `housedataTEST.csv`.  Note: your vector should contain 4229 predictions. LAST DAY to submit new model.
+
 * Work on presentation
 
 
 **Dec 6:**
 
-* Final presentations 2-4:30; WA 307 B
+* Final presentations 11-1:30; WA 303
 
 
 
