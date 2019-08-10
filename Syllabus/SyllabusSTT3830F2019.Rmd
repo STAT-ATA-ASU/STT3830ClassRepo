@@ -36,6 +36,8 @@ A continuation of STT 3820. Topics commonly covered include experimental design;
 
 **Supplemental Material:**
 
+* Gareth James, Daniela Witten, Trevor Hastie and Robert Tibshirani (2013).  [_An Introduction to Statistical Learning with Applications in R_](http://faculty.marshall.usc.edu/gareth-james/ISL/ISLR%20Seventh%20Printing.pdf)
+
 * Chester Ismay and Albert Y. Kim (2018). [_ModernDive: An Introduction to Statistical and Data Sciences via R._](htpps://moderndive.com)
 
 
@@ -49,15 +51,13 @@ You should read assigned textbook content and read/watch supplemental materials 
 Appalachian students are expected to make intensive engagement with courses their first priority. Practically speaking, students should spend approximately 2-3 hours on coursework outside of class for every hour they spend in class. For this three-hour course, you you should anticipate 6-9 hours per week of outside work.
 
 
-* 40% of the course grade will come from [DataCamp](https://www.datacamp.com/) assignments (4 assignments)
+* 24% of the course grade will come from [DataCamp](https://www.datacamp.com/) assignments (4 assignments)
 
-* 30% of the course grade will come from reproducing three [DataCamp](https://www.datacamp.com/) assignments with [bookdown](https://bookdown.org/yihui/bookdown/)
+* 24% of the course grade will come from reproducing three [DataCamp](https://www.datacamp.com/) assignments with [bookdown](https://bookdown.org/yihui/bookdown/)
 
-* 10% of the course grade will come from a predictive modeling competition
+* 30% of the course grade will come from two projects.  The final project includes an oral presentation where you discuss your final model used in the predictive modeling competition --- oral presentations will take place during the final exam period --- December 9, 2019, WA 303, 11-1:30pm
 
-* 10% of the course grade will come from quizzes
-
-* 10% of the course grade will come from the oral presentation where you discuss your final model used in the predictive modeling competition --- oral presentations will take place during the final exam period --- December 9, 2019, WA 303, 11-1:30pm
+* 22% of the course grade will come from two labs 
 
 
 
