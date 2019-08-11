@@ -101,7 +101,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * Homework:
     + [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r) - Due Sep 13
-    + Reproduce [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r) - Accept assignment from GitHub Classroom - Due Sep 20
+    + Reproduce [Data Camp Experimental Design in R (DataCamp1)]() - Accept assignment from GitHub Classroom - Due Sep 20
 
 
 **Sep 11:**
@@ -113,7 +113,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * Work Day
 * Due TODAY: [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r)  - Due Sep 13
-* Reproduce [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r)  - Accept assignment from GitHub Classroom - Due Sep 20
+* Reproduce [Data Camp Experimental Design in R (DataCamp1)]()  - Accept assignment from GitHub Classroom - Due Sep 20
 
 **Sep 16:**
 
@@ -127,7 +127,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 **Sep 20:**
 
-* Due TODAY: Reproduce [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r)  - Accept assignment from GitHub Classroom - Due Sep 20
+* Due TODAY: Reproduce [Data Camp Experimental Design in R (DataCamp1)]() - Accept assignment from GitHub Classroom - Due Sep 20
 
 
 **Sep 23:**
@@ -140,7 +140,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Homework: 
     +  Complete [Data Camp Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) - Due Sep 27
-    +  Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+    +  Reproduce [Data Camp Correlation and Regression (DataCamp2)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 
 **Sep 25:**
@@ -148,7 +148,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Homework: 
     +  Complete [Data Camp Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) - Due Sep 27
-    +  Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+    +  Reproduce [Data Camp Correlation and Regression (DataCamp2)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 
 **Sep 27:**
@@ -157,23 +157,23 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Homework: 
     +  Due TODAY: Complete [Data Camp Correlation and Regression](https://www.datacamp.com/courses/correlation-and-regression) - Due Sep 27
-    +  Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+    +  Reproduce [Data Camp Correlation and Regression (DataCamp2)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 
 **Sep 30:**
 
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
-* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp2)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 
 **Oct 2:**
 
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
-* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+* Homework: Reproduce [Data Camp Correlation and Regression (DataCamp2)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 **Oct 4:**
 
-* Due TODAY: Reproduce [Data Camp Correlation and Regression (DataCamp1)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
+* Due TODAY: Reproduce [Data Camp Correlation and Regression (DataCamp2)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom - Due Oct 4
 
 **Oct 7:**
 
@@ -184,9 +184,9 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
 * Homework: 
-    +  Reproduce [Lab: Linear Regression (Lab3)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
+    +  Reproduce [Lab: Linear Regression (Lab2)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
     +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
-    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp3)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 
 **Oct 9:**
@@ -199,9 +199,9 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
 * Homework: 
-    +  Reproduce [Lab: Linear Regression (Lab3)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
+    +  Reproduce [Lab: Linear Regression (Lab2)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
     +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
-    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp3)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 **Oct 11:**
 
@@ -210,9 +210,9 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
 * Homework: 
-    +  Due TODAY: Reproduce [Lab: Linear Regression (Lab3)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
+    +  Due TODAY: Reproduce [Lab: Linear Regression (Lab2)](https://stat-ata-asu.github.io/ISLR-CHAP3-LAB-SC/LabChap3-Solution.html) - Accept assignment from GitHub classroom - Due Oct 11
     +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
-    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp3)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 
 ~~**Oct 14**~~  Fall Break
@@ -223,7 +223,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * Homework:
     +  [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
-    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp3)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
     
 **Oct 18:**
 
@@ -231,13 +231,13 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * Homework:
     + Due TODAY: [Data Camp Multiple and Logistic Regression](https://www.datacamp.com/courses/multiple-and-logistic-regression) - Due Oct 18
-    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+    +  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp3)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
     
 **Oct 21:**
 
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
-* Homework:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+* Homework:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp3)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 **Oct 23:**
 
@@ -248,13 +248,13 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
-* Homework:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+* Homework:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp3)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
     
 **Oct 25:**
 
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 
-* Due TODAY:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp2)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
+* Due TODAY:  Reproduce [Data Camp Multiple and Logistic Regression (DataCamp3)](https://stat-ata-asu.github.io/MultipleAndLogisticRegression/) - Accept assignment from GitHub Classroom - Due Oct 25
 
 **Oct 28:**
 
