@@ -1,0 +1,87 @@
+---
+title: "In Class Activity"
+author: "Alan T. Arnholt"
+date: "8/21/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.align = "center")
+```
+
+
+```{r}
+eyecolor <- c(rep("blue", 3), rep("brown", 3), "hazel",
+              "blue", "brown", "blue", "green", "brown")
+height <- c(66, 62, 64, 70, 68, 62, 72, 62, 61, 59, 64, 65)
+DF <- data.frame(eyecolor, height)
+rm("eyecolor", "height")
+DT::datatable(DF)
+```
+
+
+```{r}
+(mh <- mean(DF$height))
+```
+
+The average height ($\bar{X}$) for this class is `r round(mh, 2)` inches.
+
+```{r}
+hist(DF$height, col = "blue")
+```
+
+
+```{r}
+boxplot(DF$height, col = "purple", horizontal = TRUE)
+```
+
+## `ggplot2`
+
+```{r}
+library(ggplot2)
+ggplot(data = DF, aes(x = height)) +
+  geom_histogram() + 
+  theme_bw()
+#
+ggplot(data = DF, aes(x = height)) +
+  geom_histogram(binwidth = 2, fill = "green", color = "black") + 
+  theme_bw() 
+#
+ggplot(data = DF, aes(x = height, y = ..density..)) +
+  geom_histogram(binwidth = 2, fill = "red", color = "black") + 
+  theme_bw() +
+  geom_density()
+```
+```{r}
+ggplot(data = DF, aes(x = "", y = height)) + 
+  geom_boxplot(fill = "pink") + 
+  coord_flip() + 
+  labs(x = "") + 
+  theme_bw()
+```
+
+
+
+## Base Graphs
+
+### Barplots
+
+```{r}
+table(DF$eyecolor)
+barplot(table(DF$eyecolor), col = c("blue", "brown", "green", "darkgreen"))
+```
+
+### `ggplot2` bargraphs
+
+```{r}
+ggplot(data = DF, aes(x = eyecolor)) +
+  geom_bar(fill = c("blue", "brown", "green", "darkgreen")) +
+  theme_bw()
+```
+
+## Writing Mathematics
+
+The standard deviation ($s$) is defined as
+
+$$s = \sqrt{\sum_{i=1}^n \frac{(x_i - \bar{x})^2}{n-1}}$$
+
