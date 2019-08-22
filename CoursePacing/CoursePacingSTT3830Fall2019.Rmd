@@ -294,7 +294,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 Start Project 2---InClass Kaggle competition 
 
 * [Example Template Directory](https://github.com/STAT-ATA-ASU/STT3851Spring2016/blob/gh-pages/BDbetaTemplate)
-* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](../Rmarkdown/KingCounty.html)  
+* Use the [housedata.csv](https://github.com/STAT-ATA-ASU/STT3851Spring2016/raw/gh-pages/Data/housedata.csv) file - See [King County Housing Data](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/KingCounty.html)  
 * See ASULEARN for InClass prediction competition link.
 
 **Nov 13:**
