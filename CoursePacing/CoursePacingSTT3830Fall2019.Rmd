@@ -103,7 +103,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * Homework:
     + [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r) - Due Sep 13
-    + Reproduce [Data Camp Experimental Design in R (DataCamp1)]() - Accept assignment from GitHub Classroom---link on ASULEARN - Due Sep 20
+    + Reproduce [Data Camp Experimental Design in R (DataCamp1)](https://stat-ata-asu.github.io/ExperimentalDesignInR/) - Accept assignment from GitHub Classroom---link on ASULEARN - Due Sep 20
 
 
 **Sep 11:**
@@ -115,7 +115,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * Work Day
 * Due TODAY: [Data Camp Experimental Design in R](https://www.datacamp.com/courses/experimental-design-in-r)  - Due Sep 13
-* Reproduce [Data Camp Experimental Design in R (DataCamp1)]()  - Accept assignment from GitHub Classroom---link on ASULEARN - Due Sep 20
+* Reproduce [Data Camp Experimental Design in R (DataCamp1)](https://stat-ata-asu.github.io/ExperimentalDesignInR/)  - Accept assignment from GitHub Classroom---link on ASULEARN - Due Sep 20
 
 **Sep 16:**
 
@@ -129,7 +129,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 **Sep 20:**
 
-* Due TODAY: Reproduce [Data Camp Experimental Design in R (DataCamp1)]() - Accept assignment from GitHub Classroom---link on ASULEARN - Due Sep 20
+* Due TODAY: Reproduce [Data Camp Experimental Design in R (DataCamp1)](https://stat-ata-asu.github.io/ExperimentalDesignInR/) - Accept assignment from GitHub Classroom---link on ASULEARN - Due Sep 20
 
 
 **Sep 23:**
