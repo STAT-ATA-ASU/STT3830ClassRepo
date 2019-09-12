@@ -1,0 +1,163 @@
+---
+title: "Experimental Design"
+author: "Alan T. Arnholt"
+date: '`r format(Sys.time(), "%B %d, %Y")`'
+output: bookdown::html_document2
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, comment = NA, fig.align = "center", message = FALSE)
+```
+
+# Completely Randomized Design
+
+## Motivational Example Tires {#TireEG}
+
+A tire manufacturer is interested in investigating the handling properties for different tread patterns.  The data frame **TIRE** has the stopping distances measured to the nearest foot for a standard-sized car to come to a complete stop from a speed of 60 miles per hour.  THere are six measurements of the stopping distance for four different tread patterns labeled A, B, C, and D.  THe same driver and car were used for all 24 measurements.  While the numbers in **TIRE** do not reveal the randomization scheme used for the experiment, the order of treatments was assigned at random.
+
+One way to ensure treatments are randomly assigned to the 24 runs is to use a random number generator.  This can be accomplished with R by typing
+
+```{r}
+population <- rep(LETTERS[1:4], 6)
+set.seed(4)
+Treatment <- sample(population, size = 24, replace = FALSE)
+DF <- data.frame(Run = 1:24, Treatment)
+DF
+```
+
+Another fashion to obtain a randomization scheme is to use the **agricolae** package.
+
+```{r}
+library(agricolae)
+design.crd(trt = LETTERS[1:4], r = 6, seed = 4)
+```
+
+
+```{r, label = "bp1", fig.cap = "Side-by-side boxplots of stopping distance by tire type"}
+library(PASWR2)
+library(ggplot2)
+ggplot(data = TIRE, aes(x = tire, y = stopdist)) + 
+  geom_boxplot() + 
+  geom_jitter() +
+  theme_bw()
+```
+
+From the boxplots in Figure \@ref(fig:bp1), it appears
+that there are differences in stopping distances based on different tire
+treads. At this point, it would be nice to formalize the last sentence with an
+inferential procedure. It is initially tempting to many to perform pairwise $t$-tests on
+all six $\left(\binom{4}{2}=6\right)$ of the pairwise differences; however,
+this should not be done! If the probability of correctly accepting the null
+hypothesis is $1- \alpha = 0.95$, then the probability of correctly accepting
+the null hypothesis for all six pairwise tests assuming independence among
+tests would be $(0.95)^6=`r round(0.95^6,2)`$. The type I error rate is not
+5% but `r round((1 - 0.95^6)*100,2)`% in this case. Of course, the more treatments 
+that are compared, the more likely one is to make a type I error. 
+What would the type I error rate be if the individual error rate for a single comparison
+is 5% and seven treatments were compared? 
+(Answer: `r round((1 - 0.95^(choose(7,2)))*100,2)`%)  The appropriate
+procedure for testing the equality of several means is analysis of
+variance, which is introduced in the context of a completely randomized
+design.
+
+**Completely Randomized Design**  The simplest randomized design for comparing several treatments is the completely randomized design (CRD).  CRDs have $a \ge 2$ treatments to compare and $N$ experimental units.  Each treatment is applied to  $n_i$ $(i=1, 2, \dots, a)$ experimental units, where $n_1 + n_2 + \dots +n_a = N$. In order to conduct the experiment, the researcher randomly assigns treatments to the experimental units (design structure).  Although the sizes of the $a$ samples need not be identical, the power of the test is maximized when $n_1=n_2= \dots =n_a$ for the $a$ treatments. On each experimental unit, a response variable $Y$ is measured.  In Section \@ref(TireEG),  $Y$ represents the distance to the nearest foot required to stop a particular model  of car traveling at 60 miles per hour using four different brands of tires.  The CRD, when there is one factor with $a$ levels (treatments) and no assumed relationships among the $a$ levels, is called a **one-way treatment** structure. Notation is critical, and the following conventions are used throughout the chapter. The sum of the observations in the $i^\text{th}$ treatment group is $Y_{i\bullet}=\sum_{j=1}^{n_i} Y_{ij}$, and the mean of the observations in the $i^\text{th}$ treatment group is $\bar{Y}_{i\bullet}=\frac{1}{n_{i}}\sum_{j=1}^{n_i}Y_{ij} = \frac{Y_{i\bullet}}{n_i}$. The bar indicates a mean while the dot $(\bullet)$ indicates that values have been added over the indicated subscript. The sum of all observations is $Y_{\bullet\bullet}=\sum_{i=1}^a \sum_{j=1}^{n_i}Y_{ij}.$ The grand mean of all observations is denoted $\bar{Y}_{\bullet\bullet}=\frac{1}{N}\sum_{i=1}^a\sum_{j=1}^{n_i}Y_{ij}=\frac{Y_{\bullet\bullet}}{N}.$
+
+To describe the observations, the linear statistical model
+\begin{equation}
+Y_{ij} = \mu + \tau_i + \epsilon_{ij} \text{ for }i=1, 2, \dots, a \text{ and } j
+=1, 2, \dots, n_a
+(\#eq:EDMeq)
+\end{equation}
+is used, where $Y_{ij}$ is the $j^\text{th}$
+observation of the $i^\text{th}$ treatment, $\mu$ is a parameter common to all
+treatments called the overall mean, $\tau_i$ is a parameter unique to the
+$i^\text{th}$ treatment called the $i^\text{th}$ treatment effect, and
+$\epsilon_{ij}$ is a random error component. For hypothesis testing, the model
+errors are assumed to be normally and independently distributed with mean zero
+and constant standard deviation $\bigl(NID(0, \sigma)\bigr)$.  The careful
+reader will realize that this implies the variance is assumed to be constant
+for all $a$ treatments.
+
+## A different approach for R Code 11.1 {-}
+
+```{r}
+library(dplyr)
+GM <- TIRE %>% 
+  summarize(Mean = mean(stopdist))
+GM$Mean  # Grand Mean Y_{dot, dot}
+TMs <-  TIRE %>% 
+        group_by(tire) %>% 
+        summarize(TreatMeans = mean(stopdist))
+TMs     #  Treament Means
+a <- dim(TMs)[1]
+N <- length(TIRE$stopdist)
+df.treat <- a - 1
+df.error <- N - a
+n_i <- TIRE %>% 
+          group_by(tire) %>% 
+          count()
+n_i
+n <- n_i[1, 2]
+SStreat <- n*sum((TMs$TreatMeans - GM$Mean)^2)
+SStreat
+
+SStotal <- sum((TIRE$stopdist - GM$Mean)^2)
+SStotal
+
+SSerror <- sum((TIRE$stopdist - rep(TMs$TreatMeans, each = 6))^2)
+SSerror
+
+MSerror <- SSerror/df.error
+MSerror
+
+MStreat <- SStreat/df.treat
+
+Fobs <- MStreat/MSerror
+Fobs
+
+pvalue <- pf(Fobs$n, df.treat, df.error, lower = FALSE)
+pvalue
+```
+
+```{r}
+mod <- aov(stopdist ~ tire, data = TIRE)
+mod
+summary(mod)
+```
+
+
+```{r}
+model.tables(mod, type = "means")
+model.tables(mod, type = "effects")
+```
+## Power
+
+**Example 11.2**
+
+```{r}
+HypMeans <- c(405, 390)
+a <- length(HypMeans)
+n <- 6
+N <- a*n
+df.error <- N - a
+Sigma <- 10
+alpha <- 0.05
+Y <- rep(HypMeans, each = 6)
+Treat <- factor(rep(LETTERS[c(2, 1)], each = 6))
+summary(aov(Y ~ Treat))
+SStreat <- summary(aov(Y ~ Treat))[[1]][1, 2]
+lambda <- SStreat/Sigma^2
+lambda
+Gamma <- sqrt(lambda)
+CritT <- qt(1 - alpha, df.error)
+Power <- pt(CritT, df.error, ncp = Gamma, lower = FALSE)
+Power
+####
+power.t.test(n = 6, delta = 15, sd = Sigma, alternative = "one.sided")
+####
+library(pwr)
+pwr.t.test(n = 6, d = 15/Sigma, sig.level = 0.05, 
+           type = "two.sample", alternative = "greater")
+```
+
+
