@@ -132,7 +132,9 @@ model.tables(mod, type = "effects")
 ```
 ## Power
 
-**Example 11.2**
+**Example 11.2**  Suppose the tire manufacturer believes the true mean stopping distance for tread patterns A, B, C, and D to be 390, 405, 415, and 410 feet, respectively, with a common standard deviation that could be as high as 20 feet or as small as 10 feet. Assume sets of tires are put on the car (a single car is used for all tests to reduce variability) in random order.
+
+* Suppose the manufacturer wants to test $H_0 : \mu_B - \mu_A = 0$ versus $H_1 : \mu_B - \mu_A > 0$ using $\alpha = 0.05$, assuming $\sigma = 10$. Determine the power of the test if six sets of tires with each tread are available.
 
 ```{r}
 HypMeans <- c(405, 390)
@@ -159,5 +161,216 @@ library(pwr)
 pwr.t.test(n = 6, d = 15/Sigma, sig.level = 0.05, 
            type = "two.sample", alternative = "greater")
 ```
+
+```{r, echo = FALSE}
+curve(dt(x, 10), -4, 8, axes = FALSE, ann = FALSE, n = 500)
+curve(dt(x, 10, Gamma), -4, 8, add = TRUE, n = 500)
+x <- seq(-4, qt(0.95, 10), length = 200)
+y <- dt(x, 10, Gamma)
+xs <- c(-4, x, qt(0.95, 10))
+ys <- c(0, y, 0)
+polygon(xs, ys, col = "lightskyblue1")
+x <- seq(qt(0.95, 10), 8, length = 200)
+y <- dt(x, 10, Gamma)
+xs <- c(qt(0.95, 10), x, 8)
+ys <- c(0, y, 0)
+polygon(xs, ys, col = "lightskyblue4")
+# Retrace now
+curve(dt(x, 10), -4, 8, add = TRUE, n = 500, lwd = 2)
+curve(dt(x, 10, Gamma), -4, 8, add = TRUE, n = 500, lwd = 2)
+# Highlight x-axis
+segments(-4, 0, 8, 0, lwd = 3)
+#
+segments(qt(0.95, 10), 0, qt(0.95, 10), dt(qt(0.95, 10), 10, Gamma), lwd = 2)
+###
+arrows(7, .20, 3, .1, length = .1)
+mtext("Power(gamma=2.5981)", side = 3, line = -5.5, at = 7)
+mtext("t_{10}", side = 3, line = 0, at = 0)
+mtext("t^*_{10;nct = 2.5981}", side = 3, line = -3, at = 4.5)
+### labels now 
+axis(side = 1, at = c(-4:8), line = -0.4)
+####
+arrows(qt(0.95, 10), 0.35, qt(0.95, 10), 0, length = 0.1, lwd = 2)
+text(qt(0.95, 10), 0.37, "t_{0.95; 10}")
+```
+
+
+
+* Determine the probability that differences among the means will be detected using $\alpha = 0.05$ assuming $\sigma = 20$ feet if six sets of tires with each tread are available. Simulate the non-central F distribution and compute the power by simulation. How does the simulation compare to the theoretical answer?
+
+```{r}
+alpha <- 0.05
+n <- 6
+HypMeans <- c(390, 405, 415, 410)   # Hypothesized means
+a <- length(HypMeans)               # Number of groups
+N <- a*n                            # Total number of expt. units 
+df.error <- N - a                   # DOF error 
+Sigma <- 20
+Y <- rep(HypMeans, each = n)                    # Responses 
+Treat <- factor(rep(LETTERS[1:4], each = 6))    # Treatment factor
+SStreat <- summary(aov(Y ~ Treat))[[1]][1, 2]   # SS treatment
+lambda <- SStreat/Sigma^2
+lambda
+CritF <- qf(1 - alpha, a - 1, N - a)
+CritF
+TheoPower <- pf(CritF, a - 1, N - a, lambda, lower = FALSE)
+TheoPower
+
+## OR
+power.anova.test(groups = 4, n = 6, between.var = var(HypMeans), 
+                 within.var = Sigma^2, sig.level = 0.05)
+```
+
+```{r, echo = FALSE}
+curve(df(x, 3, 20), 0, 12, axes = FALSE, ann = FALSE, n = 500)
+curve(df(x, 3, 20, lambda), 0, 12, add = TRUE, n = 500)
+x <- seq(qf(0.95, 3, 20), 12, length = 200)
+y <- df(x, 3, 20, lambda)
+xs <- c(qf(0.95, 3, 20), x)
+ys <- c(0, y)
+polygon(xs, ys, col = "lightblue")
+# Retrace now
+curve(df(x, 3, 20), 0, 12, add = TRUE, n = 500, lwd = 2)
+curve(df(x, 3, 20, lambda), 0, 12, add = TRUE, n = 500, lwd = 2)
+# Highlight x-axis
+segments(0, 0, 12, 0, lwd = 3)
+###
+arrows(8, .30, 4, .05, length = .1)
+arrows(qf(0.95, 3, 20), 0.25, qf(0.95, 3, 20), 0, length= 0.1)
+mtext("Power(lambda=5.25)", side = 3, line = -6.7, at = 8)
+mtext("F^*_{3, 20;lambda = 5.25}", side = 3, line = -10.5, at = 8)
+mtext("F_{3, 20}", side = 3, line =-5, at = 1.8)
+### labels now 
+axis(side = 1, at = c(0:12), line = -0.4)
+####
+text(qf(0.95, 3, 20), 0.29, "f_{0.95; 3, 20}")
+```
+
+Simulation Now
+
+```{r}
+set.seed(10)
+a <- 4            # Number of groups
+n <- 6            # Number in each group
+alpha <- 0.05     # Alpha level
+N <- a*n          # Total numberof expt. units
+CritF <- qf(1 - alpha, a - 1, N - a)   # Critical F value
+mu1 <- 390; mu2 <- 405; mu3 <- 415; mu4 <- 410  # True means
+sigma <- 20                    # Assumed sigma  
+SIMS <- 10^4                   # Numer of simulations
+FS <- numeric(SIMS)            # Storage for FS
+for(i in 1:SIMS){
+  y1 <- rnorm(n, mu1, sigma)   # Values from mu1, sigma
+  y2 <- rnorm(n, mu2, sigma)   # Values from mu2, sigma
+  y3 <- rnorm(n, mu3, sigma)   # Values from mu3, sigma
+  y4 <- rnorm(n, mu4, sigma)   # Values from mu4, sigma
+  Y <- c(y1, y2, y3, y4)       # Combined reponses  
+  treat <- factor(rep(LETTERS[1:4], each = n))  # Treatment factor
+  FS[i] <- summary(aov(Y ~ treat))[[1]][1, 4]   # F values
+}
+SimPower <- mean(FS > CritF)   # Simulated power
+SimPower
+```
+
+```{r}
+DF <- data.frame(x = FS)
+x.dens <- density(FS)
+df.dens <- data.frame(x = x.dens$x, y = x.dens$y)
+p <- ggplot(data = DF) 
+p + geom_density(aes(x=x, y=..density..), fill="skyblue1", alpha=0.2) + 
+  stat_function(fun = df, args = list(3, 20), n = 500)  + 
+  geom_area(data = subset(df.dens, x >= CritF & x <= 15), 
+               aes(x = x, y = y), fill = "skyblue4", alpha = 0.6) + 
+  labs(x = "", y = "") + theme_bw() + coord_cartesian(xlim = c(0, 12)) 
+```
+
+```{r}
+TheoPower
+SimPower
+PerDiff <- (abs(TheoPower - SimPower)/TheoPower)*100
+PerDiff       # less than 1% different
+values <- c(0.01, 0.05, 0.10, 0.20, 0.80, 0.90, 0.95, 0.99)
+TQ <- qf(values, 3, 20, lambda)       # theoretical qunatile
+SQ <- quantile(FS, probs = values)    # simulated quantile
+PD <- (abs(TQ - SQ)/TQ)*100           # percent difference
+round(rbind(TQ, SQ, PD), 5)  
+```
+
+* Determine the probability that differences among the means will be detected using $\alpha = 0.05$ if six sets of tires with each tread are available and assuming $\sigma = 10$ feet.
+
+```{r}
+alpha <- 0.05
+n <- 6                               # Number per group
+HypMeans <- c(390, 405, 415, 410)    # Hypothesized means
+a <- length(HypMeans)                # Number of groups  
+N <- a*n                             # Total number of expt. units  
+df.error <- N - a                    # DOF error
+Sigma <- 10                          # Assumed sigma
+Y <- rep(HypMeans, each = n)         # Reponses
+Treat <- factor(rep(LETTERS[1:4], each = 6))   # Treatment factor
+SStreat <- summary(aov(Y ~ Treat))[[1]][1, 2]  # SS treatment
+lambda <- SStreat/Sigma^2            # Non-centrality parameter
+lambda
+CritF <- qf(1 - alpha, a - 1, N - a) # Critical F value
+CritF
+TheoPower <- pf(CritF, a - 1, N - a, lambda, lower = FALSE)
+TheoPower
+# Or since the n per groups are the same....
+power.anova.test(groups = a, n = n, between.var = var(HypMeans), 
+                 within.var = 10^2)
+```
+
+* Assuming the stopping distance standard deviation for all tire sets is $\sigma = 20$ feet, what is the minimum number of tire sets that need to be used to ensure the probability of detecting tire tread differences is at least 80%?
+
+```{r}
+Sigma <- 20                             # Assumed sigma
+Power <- 0                              # Initialize Power to 0
+npg <- 1                                # Initial number per group  
+HypMeans <- c(390, 405, 415, 410)       # Hypothesized means
+a <- length(HypMeans)                   # Number of groups  
+while(Power < 0.80){
+  npg <- npg + 1                        # Increment npg by one
+  N <- a*npg                            # Total number of extp. units  
+  alpha <- 0.05                         # Alpha level
+  Y <- rep(HypMeans, each = npg)        # Responses
+  treat <- factor(rep(LETTERS[1:a], each = npg))  # Treatment factor
+  SStreat <- summary(aov(Y ~ treat))[[1]][1, 2]   # SS treatment
+  lambda <- SStreat/Sigma^2             # Non-centrality parameter
+  CritF <- qf(1 - alpha, a - 1, N - a)  # Critical F value  
+  Power <- pf(CritF, a - 1, N - a, ncp = lambda, lower = FALSE)
+}
+c(npg, lambda, Power) 
+
+# OR
+power.anova.test(groups = a, between.var = var(HypMeans), 
+                 within.var = 20^2, power = 0.80)
+npg <- ceiling(power.anova.test(groups = a, 
+                                between.var = var(HypMeans), 
+                                within.var = 20^2, power = 0.80)$n)
+npg
+```
+
+* Given 6 sets of tires with tread A, 6 sets of tires with tread B, 12 sets of tires with tread C, and 12 sets of tires with tread D, what is the probability of detecting tire tread differences if the true stopping standard deviation for all tire tread sets is $\sigma = 14$ feet?
+
+```{r}
+alpha <- 0.05
+n1 <- 6; n2 <- 6; n3 <- 12; n4 <- 12  # Numbers per group
+HypMeans <- c(390, 405, 415, 410)     # Hypothesized means
+a <- length(HypMeans)                 # Number of groups
+N <- n1 + n2 + n3 + n4                # Total number of expt. units
+df.error <- N - a                     # DOF error
+Sigma <- 14                           # Assumed sigma
+Y <- rep(HypMeans, times = c(n1, n2, n3, n4))  # Responses
+Treat <- factor(rep(LETTERS[1:4], times = c(n1, n2, n3, n4))) 
+SStreat <- summary(aov(Y ~ Treat))[[1]][1, 2]  # SS treatment
+lambda <- SStreat/Sigma^2             # Non-centrality parameter 
+lambda
+CritF <- qf(1 - alpha, a - 1, N - a)  # Critical F value
+CritF
+TheoPower <- pf(CritF, a - 1, N - a, lambda, lower = FALSE)
+TheoPower
+```
+
+
 
 
