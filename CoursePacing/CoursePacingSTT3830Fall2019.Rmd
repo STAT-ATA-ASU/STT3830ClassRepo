@@ -166,6 +166,7 @@ Most GitHub Classroom assignments due dates are 5 p.m. Friday.
 
 * Discuss [Chapter 2 and 3 material](https://stat-ata-asu.github.io/STT3851ClassRepo/Rmarkdown/Chap2Slides.html)
 * Homework: Reproduce [Data Camp Correlation and Regression (DataCamp2)](https://stat-ata-asu.github.io/CorrelationRegression/) - Accept assignment from GitHub Classroom---link on ASULEARN - Due Oct 4
+* [Code]() to help with the production of Figure 6.1
 
 
 **Oct 2:**
