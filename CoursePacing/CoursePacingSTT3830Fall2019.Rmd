@@ -310,6 +310,11 @@ Start Project 2---InClass Kaggle competition
 
 * TBD
 
+**Nov 20:**
+
+* [Misc Issues](../Rmarkdown/OneHot.html)
+
+
 
 **Nov 22:**
 
